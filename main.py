@@ -22,10 +22,8 @@ if args.url:
 elif args.all_maps:
     print("Baixando todos os mapas...")
     nome_dos_mapas = util.obter_nome_todos_os_mapas()
-    for i, nome_do_mapa in enumerate(nome_dos_mapas):
-        print(i)
-        if i >= 3:
-            util.processar_tile(ZOOM_MAXIMO, nome_do_mapa)
+    for nome_do_mapa in nome_dos_mapas:
+        util.processar_tile(ZOOM_MAXIMO, nome_do_mapa)
 else:
     print("Uso: python main.py --url <url_do_mapa> ou --all-maps\nExemplo: python main.py --url https://mapgallery.realitymod.com/images/maps/<nome_do_mapa>/tiles")
 
