@@ -34,19 +34,28 @@ git clone https://github.com/PedroMagno11/ProjectRealityTilesDownloader.git
 cd ProjectRealityTilesDownloader
 ```
 
-### 2️⃣ **Executar o script**
+### 2️⃣ **Executar o seguinte script para fazer o download de tiles de um mapa específico**
 
 ```bash
-python main.py <url_do_mapa>
+python main.py --url <url_do_mapa>
 ```
 
+### 3️⃣ **Executar o seguinte script para fazer o download dos tiles de todos os mapas
+
+```bash
+python main.py --all-maps
+```
 
 O script usará as configurações definidas no arquivo `.env`.
 
 ### 📌 **Exemplo de Uso**
-
+### Para baixar tiles do mapa Assault on Grozny
 ```bash
-python main.py https://mapgallery.realitymod.com/images/maps/assaultongrozny/tiles
+python main.py --url https://mapgallery.realitymod.com/images/maps/assaultongrozny/tiles
+```
+### Para baixar os tiles de todos os mapas
+```bash
+python main.py --all-maps
 ```
 
 ## 📚 **Licença**
