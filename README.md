@@ -22,7 +22,7 @@ pip install -r requirements.txt
 1. \*\*Criar um arquivo \*\***`.env`** na raiz do projeto com as configurações:
 
 ```
-ARQUIVO_DESTINO_MAPAS=C:\\ProjectRealityMaps
+ARQUIVO_DESTINO_MAPAS=C:\\caminho\\para\\seus\\mapas
 ```
 
 ## 💾 **Instalação e Uso**
